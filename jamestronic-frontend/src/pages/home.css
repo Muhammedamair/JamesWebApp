@@ -1,0 +1,23 @@
+.cta-button {
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease-in-out;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+}
+
+.cta-button::before {
+  content: '→';
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: right 0.3s ease-in-out;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.cta-button:hover::before {
+  right: 10px;
+}
